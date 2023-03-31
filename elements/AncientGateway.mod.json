@@ -6,8 +6,8 @@
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 500051,
-    "minCountPerChunk": 1,
-    "maxCountPerChunk": 1,
+    "minCountPerChunk": 2,
+    "maxCountPerChunk": 16,
     "spawnLocation": "Ground",
     "spawnHeightOffset": -17,
     "spawnXOffset": 0,
@@ -21,6 +21,6 @@
         "value": "desert"
       }
     ],
-    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }
