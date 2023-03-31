@@ -50,7 +50,7 @@ public class ArenaStructure {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 1000000) {
+					if ((random.nextInt(1000000) + 1) <= 100000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
@@ -64,7 +64,7 @@ public class ArenaStructure {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("worldd", "ancient_gateway"));
+									.getTemplateDefaulted(new ResourceLocation("worldd", "arena"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
@@ -87,6 +87,8 @@ public class ArenaStructure {
 	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("desert").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("worldd:giga_mushro").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

@@ -2,7 +2,7 @@
   "_fv": 33,
   "_type": "structure",
   "definition": {
-    "structure": "ancient_gateway",
+    "structure": "arena",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 15000,

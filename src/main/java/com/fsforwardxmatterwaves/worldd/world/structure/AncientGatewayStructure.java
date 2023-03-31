@@ -64,7 +64,7 @@ public class AncientGatewayStructure {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("worldd", "ancient_gateway"));
+									.getTemplateDefaulted(new ResourceLocation("worldd", "arena"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
