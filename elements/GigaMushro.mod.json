@@ -1,0 +1,111 @@
+{
+  "_fv": 33,
+  "_type": "biome",
+  "definition": {
+    "name": "Giga Mushro",
+    "groundBlock": {
+      "value": "Blocks.MUSHROOM_STEM"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#1"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.GRAVEL"
+    },
+    "waterColor": {
+      "value": -39322,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": -0.1,
+    "heightVariation": 1.0,
+    "spawnBiome": true,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
+    "biomeWeight": 100,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 4,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 11,
+    "bigMushroomsChunk": 3,
+    "sandPatchesPerChunk": 2,
+    "gravelPatchesPerChunk": 4,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 6,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 4,
+    "treeStem": {
+      "value": "Blocks.MUSHROOM_STEM"
+    },
+    "treeBranch": {
+      "value": "Blocks.MUSHROOM_STEM"
+    },
+    "treeVines": {
+      "value": "Blocks.RED_MUSHROOM_BLOCK"
+    },
+    "treeFruits": {
+      "value": "Blocks.BROWN_MUSHROOM"
+    },
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer",
+      "Fossils",
+      "MonsterRooms"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityAreaEffectCloud"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

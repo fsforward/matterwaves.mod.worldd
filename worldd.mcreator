@@ -15,12 +15,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "arena"
+    },
+    {
+      "name": "GigaMushro",
+      "type": "biome",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giga_mushro"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.worldd.giga_mushro": "Giga Mushro"
+    }
   },
   "foldersRoot": {
     "name": "~",
