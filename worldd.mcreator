@@ -1,0 +1,40 @@
+{
+  "mod_elements": [
+    {
+      "name": "AncientGateway",
+      "type": "structure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_gateway"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "worldd",
+    "modName": "WorldD",
+    "version": "1.0.0",
+    "author": "Matterwaves",
+    "websiteURL": "https://minecraft.fsforward.com",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Mod by Matterwaves, Help by fsForward",
+    "modElementsPackage": "com.fsforwardxmatterwaves.worldd",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}

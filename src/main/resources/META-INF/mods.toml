@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="worldd"
+version="1.0.0"
+displayName="WorldD"
+credits="Mod by Matterwaves, Help by fsForward"
+displayURL="https://minecraft.fsforward.com"
+authors="Matterwaves"
+
+[[dependencies.worldd]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
