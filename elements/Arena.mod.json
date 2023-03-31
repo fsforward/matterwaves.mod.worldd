@@ -5,11 +5,11 @@
     "structure": "ancient_gateway",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 15000,
+    "spawnProbability": 50000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": -17,
+    "spawnHeightOffset": -4,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
@@ -19,9 +19,6 @@
     "restrictionBiomes": [
       {
         "value": "desert"
-      },
-      {
-        "value": "desert_hills"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

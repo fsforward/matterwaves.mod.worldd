@@ -7,6 +7,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ancient_gateway"
+    },
+    {
+      "name": "Arena",
+      "type": "structure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arena"
     }
   ],
   "variable_elements": [],
