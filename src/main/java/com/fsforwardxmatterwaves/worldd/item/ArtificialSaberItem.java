@@ -4,7 +4,7 @@ package com.fsforwardxmatterwaves.worldd.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
@@ -22,7 +22,7 @@ public class ArtificialSaberItem extends WorlddModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new PickaxeItem(new IItemTier() {
+		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
 				return 420;
 			}
@@ -46,7 +46,7 @@ public class ArtificialSaberItem extends WorlddModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -1.5f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 3, -1.5f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("artificial_saber"));
 	}
 }
