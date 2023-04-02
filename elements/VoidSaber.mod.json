@@ -1,0 +1,32 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "purplesaber",
+    "customModelName": "Normal",
+    "name": "Void Saber",
+    "specialInfo": [
+      "The Void Saber... its the nightmare of all of your opponents"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 5,
+    "efficiency": 14.0,
+    "attackSpeed": 2.8000000000000003,
+    "enchantability": 1,
+    "damageVsEntity": 11.0,
+    "usageCount": 680,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "VoidSaberLivingEntityIsHitWithTool"
+    }
+  }
+}

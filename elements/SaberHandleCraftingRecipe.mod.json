@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LeadIngot"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      },
+      {
+        "value": "CUSTOM:LeadIngot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SaberHandle"
+    },
+    "name": "saber_handle_crafting_recipe",
+    "namespace": "mod"
+  }
+}

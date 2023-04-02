@@ -1,40 +1,373 @@
 {
   "mod_elements": [
     {
-      "name": "AncientGateway",
-      "type": "structure",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_gateway"
-    },
-    {
-      "name": "Arena",
-      "type": "structure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "arena"
-    },
-    {
-      "name": "GigaMushro",
-      "type": "biome",
+      "name": "DeathSaberLivingEntityIsHitWithTool",
+      "type": "procedure",
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "giga_mushro"
+      "registry_name": "death_saber_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/DeathSaber"
+    },
+    {
+      "name": "DeathSaber",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_saber",
+      "path": "~/DeathSaber"
+    },
+    {
+      "name": "VoidSaberLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_saber_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/VoidSaber"
+    },
+    {
+      "name": "VoidSaber",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_saber",
+      "path": "~/VoidSaber"
+    },
+    {
+      "name": "LiveStealSaberLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_steal_saber_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/LiveStealSaber"
+    },
+    {
+      "name": "LiveStealSaber",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_steal_saber",
+      "path": "~/LiveStealSaber"
+    },
+    {
+      "name": "LiveStealSaberToolInHandTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_steal_saber_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/LiveStealSaber"
+    },
+    {
+      "name": "LiveStealSaberBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_steal_saber_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/LiveStealSaber"
+    },
+    {
+      "name": "LiveStealSaberOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_steal_saber_on_player_stopped_using",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LiveStealSaber"
+    },
+    {
+      "name": "LiveStealSaberEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_steal_saber_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/LiveStealSaber"
+    },
+    {
+      "name": "DeathSaberEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_saber_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/DeathSaber"
+    },
+    {
+      "name": "SaberHandle",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saber_handle",
+      "path": "~/SaberHandle"
+    },
+    {
+      "name": "ArtificialSaber",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "artificial_saber",
+      "path": "~/ArtificialSaber"
+    },
+    {
+      "name": "RoseQuartz",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rose_quartz",
+      "path": "~/RoseQuartz"
+    },
+    {
+      "name": "RoseQuartzcraftrecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rose_quartzcraftrecipe",
+      "path": "~/RoseQuartz"
+    },
+    {
+      "name": "LeadIngot",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ingot",
+      "path": "~/Lead_ingot"
+    },
+    {
+      "name": "Titaniumingot",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titaniumingot",
+      "path": "~/Titanium/Titanium_ingot"
+    },
+    {
+      "name": "TitaniumOre",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "LeadOre",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ore",
+      "path": "~/Lead_ingot"
+    },
+    {
+      "name": "TitaniumLootTable",
+      "type": "loottable",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_loot_table",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "TitaniumIngotCraftingRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ingot_crafting_recipe",
+      "path": "~/Titanium"
+    },
+    {
+      "name": "LeadOreCraftingRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lead_ore_crafting_recipe",
+      "path": "~/Lead_ingot"
+    },
+    {
+      "name": "SaberHandleCraftingRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saber_handle_crafting_recipe",
+      "path": "~/SaberHandle"
+    },
+    {
+      "name": "ArtificialLens",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "artificial_lens",
+      "path": "~/ArtificialLens"
+    },
+    {
+      "name": "ArtificialLensCraftingRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "artificial_lens_crafting_recipe",
+      "path": "~/ArtificialLens"
+    },
+    {
+      "name": "ArtificialSaberCraftingRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "artificial_saber_crafting_recipe",
+      "path": "~/ArtificialSaber"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.worldd.giga_mushro": "Giga Mushro"
+      "item.worldd.death_saber": "Death Saber",
+      "item.worldd.titaniumingot": "Titaniumingot",
+      "item.worldd.saber_handle": "Saber Handle",
+      "item.worldd.artificial_lens": "Artificial Lens",
+      "item.worldd.rose_quartz": "Rose Quartz",
+      "block.worldd.lead_ore": "Lead Ore",
+      "item.worldd.lead_ingot": "Lead Ingot",
+      "item.worldd.void_saber": "Void Saber",
+      "item.worldd.live_steal_saber": "Live Steal Saber",
+      "item.worldd.artificial_saber": "Artificial Saber",
+      "block.worldd.titanium_ore": "Titanium Ore"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "LiveStealSaber",
+        "children": []
+      },
+      {
+        "name": "DeathSaber",
+        "children": []
+      },
+      {
+        "name": "VoidSaber",
+        "children": []
+      },
+      {
+        "name": "Lead_ingot",
+        "children": []
+      },
+      {
+        "name": "Titanium",
+        "children": [
+          {
+            "name": "Titanium_ingot",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "SaberHandle",
+        "children": []
+      },
+      {
+        "name": "ArtificialLens",
+        "children": []
+      },
+      {
+        "name": "ArtificialSaber",
+        "children": []
+      },
+      {
+        "name": "RoseQuartz",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "worldd",

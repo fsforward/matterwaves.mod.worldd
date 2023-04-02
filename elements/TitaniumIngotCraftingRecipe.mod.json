@@ -1,0 +1,20 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 5.0,
+    "cookingTime": 400,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:TitaniumOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Titaniumingot"
+    },
+    "name": "titanium_ingot_crafting_recipe",
+    "namespace": "mod"
+  }
+}

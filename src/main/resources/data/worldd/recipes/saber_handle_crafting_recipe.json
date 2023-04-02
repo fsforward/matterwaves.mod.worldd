@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "worldd:titaniumingot"
+    },
+    "3": {
+      "item": "worldd:lead_ingot"
+    },
+    "4": {
+      "item": "minecraft:gold_ingot"
+    },
+    "5": {
+      "item": "worldd:titaniumingot"
+    },
+    "6": {
+      "item": "worldd:titaniumingot"
+    },
+    "7": {
+      "item": "worldd:lead_ingot"
+    }
+  },
+  "result": {
+    "item": "worldd:saber_handle",
+    "count": 1
+  }
+}

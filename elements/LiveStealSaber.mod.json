@@ -1,0 +1,38 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "greensaber",
+    "customModelName": "Normal",
+    "name": "Live Steal Saber",
+    "specialInfo": [
+      "The only one out of the four sabers that can steal your opponents health.. but at what cost?"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 5,
+    "efficiency": 9.0,
+    "attackSpeed": 2.0,
+    "enchantability": 8,
+    "damageVsEntity": 6.0,
+    "usageCount": 768,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "LiveStealSaberLivingEntityIsHitWithTool"
+    },
+    "onStoppedUsing": {
+      "name": "LiveStealSaberOnPlayerStoppedUsing"
+    },
+    "onEntitySwing": {
+      "name": "LiveStealSaberEntitySwingsItem"
+    }
+  }
+}

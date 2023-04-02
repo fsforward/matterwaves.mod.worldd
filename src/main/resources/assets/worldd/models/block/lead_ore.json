@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "worldd:blocks/lead_ore",
+    "up": "worldd:blocks/lead_ore",
+    "north": "worldd:blocks/lead_ore",
+    "east": "worldd:blocks/lead_ore",
+    "south": "worldd:blocks/lead_ore",
+    "west": "worldd:blocks/lead_ore",
+    "particle": "worldd:blocks/lead_ore"
+  }
+}

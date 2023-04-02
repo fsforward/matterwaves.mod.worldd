@@ -1,0 +1,35 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "redsaber",
+    "customModelName": "Normal",
+    "name": "Death Saber",
+    "specialInfo": [
+      "Flaming red hot beam of light cutting through anything you like"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 5,
+    "efficiency": 14.0,
+    "attackSpeed": 0.8,
+    "enchantability": 2,
+    "damageVsEntity": 15.0,
+    "usageCount": 512,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DeathSaberLivingEntityIsHitWithTool"
+    },
+    "onEntitySwing": {
+      "name": "DeathSaberEntitySwingsItem"
+    }
+  }
+}
