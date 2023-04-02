@@ -24,7 +24,7 @@ public class SaberHandleItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public SaberHandleItem(WorlddModElements instance) {
-		super(instance, 10);
+		super(instance, 5);
 	}
 
 	@Override

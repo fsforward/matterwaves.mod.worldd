@@ -34,7 +34,7 @@ public class LiveStealSaberItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public LiveStealSaberItem(WorlddModElements instance) {
-		super(instance, 5);
+		super(instance, 3);
 	}
 
 	@Override

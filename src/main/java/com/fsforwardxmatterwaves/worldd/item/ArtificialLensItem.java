@@ -17,7 +17,7 @@ public class ArtificialLensItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public ArtificialLensItem(WorlddModElements instance) {
-		super(instance, 23);
+		super(instance, 8);
 	}
 
 	@Override

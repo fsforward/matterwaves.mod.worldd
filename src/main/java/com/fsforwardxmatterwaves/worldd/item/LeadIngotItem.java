@@ -17,7 +17,7 @@ public class LeadIngotItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public LeadIngotItem(WorlddModElements instance) {
-		super(instance, 15);
+		super(instance, 6);
 	}
 
 	@Override

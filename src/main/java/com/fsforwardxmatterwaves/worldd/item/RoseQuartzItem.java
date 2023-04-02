@@ -18,7 +18,7 @@ public class RoseQuartzItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public RoseQuartzItem(WorlddModElements instance) {
-		super(instance, 12);
+		super(instance, 9);
 	}
 
 	@Override

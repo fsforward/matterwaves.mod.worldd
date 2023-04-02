@@ -17,7 +17,7 @@ public class TitaniumingotItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public TitaniumingotItem(WorlddModElements instance) {
-		super(instance, 16);
+		super(instance, 7);
 	}
 
 	@Override

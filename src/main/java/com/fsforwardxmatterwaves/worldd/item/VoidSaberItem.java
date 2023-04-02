@@ -30,7 +30,7 @@ public class VoidSaberItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public VoidSaberItem(WorlddModElements instance) {
-		super(instance, 4);
+		super(instance, 2);
 	}
 
 	@Override

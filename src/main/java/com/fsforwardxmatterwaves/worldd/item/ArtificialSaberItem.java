@@ -17,7 +17,7 @@ public class ArtificialSaberItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public ArtificialSaberItem(WorlddModElements instance) {
-		super(instance, 11);
+		super(instance, 4);
 	}
 
 	@Override
