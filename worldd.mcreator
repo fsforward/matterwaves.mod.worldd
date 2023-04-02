@@ -19,7 +19,7 @@
           }
         ]
       },
-      "path": "~/DeathSaber"
+      "path": "~/Procedures"
     },
     {
       "name": "DeathSaber",
@@ -28,7 +28,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "death_saber",
-      "path": "~/DeathSaber"
+      "path": "~/Items/Tools"
     },
     {
       "name": "VoidSaberLivingEntityIsHitWithTool",
@@ -45,7 +45,7 @@
           }
         ]
       },
-      "path": "~/VoidSaber"
+      "path": "~/Procedures"
     },
     {
       "name": "VoidSaber",
@@ -54,7 +54,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_saber",
-      "path": "~/VoidSaber"
+      "path": "~/Items/Tools"
     },
     {
       "name": "LiveStealSaberLivingEntityIsHitWithTool",
@@ -75,7 +75,7 @@
           }
         ]
       },
-      "path": "~/LiveStealSaber"
+      "path": "~/Procedures"
     },
     {
       "name": "LiveStealSaber",
@@ -84,7 +84,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "live_steal_saber",
-      "path": "~/LiveStealSaber"
+      "path": "~/Items/Tools"
     },
     {
       "name": "LiveStealSaberToolInHandTick",
@@ -105,7 +105,7 @@
           }
         ]
       },
-      "path": "~/LiveStealSaber"
+      "path": "~/Procedures"
     },
     {
       "name": "LiveStealSaberBlockDestroyedWithTool",
@@ -117,7 +117,7 @@
       "metadata": {
         "dependencies": []
       },
-      "path": "~/LiveStealSaber"
+      "path": "~/Procedures"
     },
     {
       "name": "LiveStealSaberOnPlayerStoppedUsing",
@@ -134,7 +134,7 @@
           }
         ]
       },
-      "path": "~/LiveStealSaber"
+      "path": "~/Procedures"
     },
     {
       "name": "LiveStealSaberEntitySwingsItem",
@@ -151,7 +151,7 @@
           }
         ]
       },
-      "path": "~/LiveStealSaber"
+      "path": "~/Procedures"
     },
     {
       "name": "DeathSaberEntitySwingsItem",
@@ -168,7 +168,7 @@
           }
         ]
       },
-      "path": "~/DeathSaber"
+      "path": "~/Procedures"
     },
     {
       "name": "SaberHandle",
@@ -176,8 +176,7 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "saber_handle",
-      "path": "~/SaberHandle"
+      "registry_name": "saber_handle"
     },
     {
       "name": "ArtificialSaber",
@@ -186,7 +185,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "artificial_saber",
-      "path": "~/ArtificialSaber"
+      "path": "~/Items/Tools"
     },
     {
       "name": "RoseQuartz",
@@ -195,7 +194,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose_quartz",
-      "path": "~/RoseQuartz"
+      "path": "~/Items/Ores/Gems"
     },
     {
       "name": "RoseQuartzcraftrecipe",
@@ -204,7 +203,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose_quartzcraftrecipe",
-      "path": "~/RoseQuartz"
+      "path": "~/Recipes"
     },
     {
       "name": "LeadIngot",
@@ -213,7 +212,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lead_ingot",
-      "path": "~/Lead_ingot"
+      "path": "~/Items/Ores/Ingots"
     },
     {
       "name": "Titaniumingot",
@@ -222,7 +221,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "titaniumingot",
-      "path": "~/Titanium/Titanium_ingot"
+      "path": "~/Items/Ores/Ingots"
     },
     {
       "name": "TitaniumOre",
@@ -231,7 +230,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ore",
-      "path": "~/Titanium"
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "LeadOre",
@@ -240,7 +239,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lead_ore",
-      "path": "~/Lead_ingot"
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "TitaniumLootTable",
@@ -248,8 +247,7 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titanium_loot_table",
-      "path": "~/Titanium"
+      "registry_name": "titanium_loot_table"
     },
     {
       "name": "TitaniumIngotCraftingRecipe",
@@ -258,7 +256,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ingot_crafting_recipe",
-      "path": "~/Titanium"
+      "path": "~/Recipes"
     },
     {
       "name": "LeadOreCraftingRecipe",
@@ -267,7 +265,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lead_ore_crafting_recipe",
-      "path": "~/Lead_ingot"
+      "path": "~/Recipes"
     },
     {
       "name": "SaberHandleCraftingRecipe",
@@ -276,7 +274,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "saber_handle_crafting_recipe",
-      "path": "~/SaberHandle"
+      "path": "~/Recipes"
     },
     {
       "name": "ArtificialLens",
@@ -284,8 +282,7 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "artificial_lens",
-      "path": "~/ArtificialLens"
+      "registry_name": "artificial_lens"
     },
     {
       "name": "ArtificialLensCraftingRecipe",
@@ -294,7 +291,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "artificial_lens_crafting_recipe",
-      "path": "~/ArtificialLens"
+      "path": "~/Recipes"
     },
     {
       "name": "ArtificialSaberCraftingRecipe",
@@ -303,7 +300,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "artificial_saber_crafting_recipe",
-      "path": "~/ArtificialSaber"
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -327,44 +324,42 @@
     "name": "~",
     "children": [
       {
-        "name": "LiveStealSaber",
-        "children": []
-      },
-      {
-        "name": "DeathSaber",
-        "children": []
-      },
-      {
-        "name": "VoidSaber",
-        "children": []
-      },
-      {
-        "name": "Lead_ingot",
-        "children": []
-      },
-      {
-        "name": "Titanium",
+        "name": "Blocks",
         "children": [
           {
-            "name": "Titanium_ingot",
+            "name": "Ores",
             "children": []
           }
         ]
       },
       {
-        "name": "SaberHandle",
+        "name": "Items",
+        "children": [
+          {
+            "name": "Ores",
+            "children": [
+              {
+                "name": "Ingots",
+                "children": []
+              },
+              {
+                "name": "Gems",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Tools",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Recipes",
         "children": []
       },
       {
-        "name": "ArtificialLens",
-        "children": []
-      },
-      {
-        "name": "ArtificialSaber",
-        "children": []
-      },
-      {
-        "name": "RoseQuartz",
+        "name": "Procedures",
         "children": []
       }
     ]
