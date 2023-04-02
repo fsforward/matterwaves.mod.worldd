@@ -9,13 +9,13 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.client.util.ITooltipFlag;
 
 import java.util.List;
 
+import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
 import com.fsforwardxmatterwaves.worldd.WorlddModElements;
 
 @WorlddModElements.ModElement.Tag
@@ -24,7 +24,7 @@ public class SaberHandleItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public SaberHandleItem(WorlddModElements instance) {
-		super(instance, 5);
+		super(instance, 11);
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class SaberHandleItem extends WorlddModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 3, -3f, new Item.Properties().group(WorldDItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

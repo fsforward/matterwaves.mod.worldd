@@ -173,7 +173,7 @@
     {
       "name": "SaberHandle",
       "type": "tool",
-      "sortid": 5,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "saber_handle"
@@ -190,7 +190,7 @@
     {
       "name": "RoseQuartz",
       "type": "item",
-      "sortid": 9,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose_quartz",
@@ -208,7 +208,7 @@
     {
       "name": "LeadIngot",
       "type": "item",
-      "sortid": 6,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lead_ingot",
@@ -217,7 +217,7 @@
     {
       "name": "Titaniumingot",
       "type": "item",
-      "sortid": 7,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titaniumingot",
@@ -226,7 +226,7 @@
     {
       "name": "TitaniumOre",
       "type": "block",
-      "sortid": 10,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ore",
@@ -235,7 +235,7 @@
     {
       "name": "LeadOre",
       "type": "block",
-      "sortid": 11,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lead_ore",
@@ -279,7 +279,7 @@
     {
       "name": "ArtificialLens",
       "type": "item",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "artificial_lens"
@@ -301,6 +301,14 @@
       "locked_code": false,
       "registry_name": "artificial_saber_crafting_recipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "WorldD",
+      "type": "tab",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_d"
     }
   ],
   "variable_elements": [],
@@ -312,9 +320,10 @@
       "item.worldd.saber_handle": "Saber Handle",
       "item.worldd.artificial_lens": "Artificial Lens",
       "item.worldd.rose_quartz": "Rose Quartz",
+      "itemGroup.tabworld_d": "World D",
+      "item.worldd.void_saber": "Void Saber",
       "block.worldd.lead_ore": "Lead Ore",
       "item.worldd.lead_ingot": "Lead Ingot",
-      "item.worldd.void_saber": "Void Saber",
       "item.worldd.live_steal_saber": "Live Steal Saber",
       "item.worldd.artificial_saber": "Artificial Saber",
       "block.worldd.titanium_ore": "Titanium Ore"
@@ -367,7 +376,7 @@
   "workspaceSettings": {
     "modid": "worldd",
     "modName": "WorldD",
-    "version": "1.0.0-a.1",
+    "version": "1.0.0.01",
     "author": "Matterwaves",
     "websiteURL": "https://minecraft.fsforward.com",
     "license": "All Rights Reserved",

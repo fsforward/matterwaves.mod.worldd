@@ -1,0 +1,11 @@
+{
+  "_fv": 33,
+  "_type": "tab",
+  "definition": {
+    "name": "World D",
+    "icon": {
+      "value": "CUSTOM:ArtificialLens"
+    },
+    "showSearch": false
+  }
+}
