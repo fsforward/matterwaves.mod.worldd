@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Titaniumingot"
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      },
+      {
+        "value": "CUSTOM:LiveCrystal"
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LiveStealLens"
+    },
+    "name": "live_steal_lens_crafting_recipe",
+    "namespace": "mod"
+  }
+}

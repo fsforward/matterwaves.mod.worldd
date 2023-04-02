@@ -20,7 +20,7 @@
     "damageVsEntity": 6.0,
     "usageCount": 768,
     "blocksAffected": [],
-    "hasGlow": true,
+    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,

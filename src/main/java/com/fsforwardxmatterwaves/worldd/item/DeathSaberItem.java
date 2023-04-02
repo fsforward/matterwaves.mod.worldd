@@ -31,7 +31,7 @@ public class DeathSaberItem extends WorlddModElements.ModElement {
 	public static final Item block = null;
 
 	public DeathSaberItem(WorlddModElements instance) {
-		super(instance, 1);
+		super(instance, 2);
 	}
 
 	@Override

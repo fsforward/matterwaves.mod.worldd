@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "worldd:rose_quartz"
+    },
+    "1": {
+      "item": "worldd:purple_sapphire"
+    },
+    "2": {
+      "item": "worldd:rose_quartz"
+    },
+    "3": {
+      "item": "worldd:purple_sapphire"
+    },
+    "4": {
+      "item": "worldd:purple_sapphire"
+    },
+    "5": {
+      "item": "worldd:purple_sapphire"
+    },
+    "6": {
+      "item": "worldd:rose_quartz"
+    },
+    "7": {
+      "item": "worldd:purple_sapphire"
+    },
+    "8": {
+      "item": "worldd:rose_quartz"
+    }
+  },
+  "result": {
+    "item": "worldd:void_crystal",
+    "count": 1
+  }
+}

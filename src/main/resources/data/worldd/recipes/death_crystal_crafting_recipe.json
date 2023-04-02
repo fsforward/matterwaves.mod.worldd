@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "worldd:black_diamond"
+    },
+    "1": {
+      "item": "worldd:painite"
+    },
+    "2": {
+      "item": "worldd:black_diamond"
+    },
+    "3": {
+      "item": "worldd:painite"
+    },
+    "4": {
+      "item": "worldd:painite"
+    },
+    "5": {
+      "item": "worldd:painite"
+    },
+    "6": {
+      "item": "worldd:black_diamond"
+    },
+    "7": {
+      "item": "worldd:painite"
+    },
+    "8": {
+      "item": "worldd:black_diamond"
+    }
+  },
+  "result": {
+    "item": "worldd:death_crystal",
+    "count": 1
+  }
+}

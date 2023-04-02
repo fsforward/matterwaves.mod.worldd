@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "worldd:titaniumingot"
+    },
+    "1": {
+      "item": "worldd:titaniumingot"
+    },
+    "3": {
+      "item": "worldd:titaniumingot"
+    },
+    "4": {
+      "item": "worldd:void_crystal"
+    },
+    "5": {
+      "item": "worldd:titaniumingot"
+    },
+    "7": {
+      "item": "worldd:titaniumingot"
+    },
+    "8": {
+      "item": "worldd:titaniumingot"
+    }
+  },
+  "result": {
+    "item": "worldd:void_lens",
+    "count": 1
+  }
+}

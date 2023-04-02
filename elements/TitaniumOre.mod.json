@@ -8,8 +8,8 @@
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:WorldD"
+      "value": "BUILDING_BLOCKS"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -48,7 +48,7 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -123,35 +123,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "birch_forest"
-      },
-      {
-        "value": "birch_forest_hills"
-      },
-      {
-        "value": "mutated_birch_forest"
-      },
-      {
-        "value": "mutated_birch_forest_hills"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
-      },
-      {
-        "value": "Blocks.IRON_ORE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 6,
+    "frequencyPerChunks": 8,
     "frequencyOnChunk": 6,
-    "minGenerateHeight": 12,
+    "minGenerateHeight": 16,
     "maxGenerateHeight": 32
   }
 }

@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "worldd:blocks/titanium_ore",
+    "down": "worldd:blocks/titanium_ore",
+    "up": "worldd:blocks/titanium_ore",
+    "north": "worldd:blocks/titanium_ore",
+    "east": "worldd:blocks/titanium_ore",
+    "south": "worldd:blocks/titanium_ore",
+    "west": "worldd:blocks/titanium_ore",
     "particle": "worldd:blocks/titanium_ore"
   }
 }

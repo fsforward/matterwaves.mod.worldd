@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:emerald"
+    },
+    "1": {
+      "item": "worldd:malachite"
+    },
+    "2": {
+      "item": "minecraft:emerald"
+    },
+    "3": {
+      "item": "worldd:malachite"
+    },
+    "4": {
+      "item": "minecraft:emerald_block"
+    },
+    "5": {
+      "item": "worldd:malachite"
+    },
+    "6": {
+      "item": "minecraft:emerald"
+    },
+    "7": {
+      "item": "worldd:malachite"
+    },
+    "8": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "worldd:live_crystal",
+    "count": 1
+  }
+}

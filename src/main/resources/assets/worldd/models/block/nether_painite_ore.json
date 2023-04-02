@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "worldd:blocks/nether_painite_ore",
+    "particle": "worldd:blocks/nether_painite_ore"
+  }
+}

@@ -2,8 +2,6 @@
 package com.fsforwardxmatterwaves.worldd.item;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
@@ -106,12 +104,6 @@ public class LiveStealSaberItem extends WorlddModElements.ModElement {
 
 				LiveStealSaberOnPlayerStoppedUsingProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			}
-
-			@Override
-			@OnlyIn(Dist.CLIENT)
-			public boolean hasEffect(ItemStack itemstack) {
-				return true;
 			}
 		}.setRegistryName("live_steal_saber"));
 	}

@@ -24,7 +24,7 @@
     {
       "name": "DeathSaber",
       "type": "tool",
-      "sortid": 1,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "death_saber",
@@ -50,7 +50,7 @@
     {
       "name": "VoidSaber",
       "type": "tool",
-      "sortid": 2,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "void_saber",
@@ -173,7 +173,7 @@
     {
       "name": "SaberHandle",
       "type": "tool",
-      "sortid": 11,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "saber_handle"
@@ -190,7 +190,7 @@
     {
       "name": "RoseQuartz",
       "type": "item",
-      "sortid": 10,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rose_quartz",
@@ -208,7 +208,7 @@
     {
       "name": "LeadIngot",
       "type": "item",
-      "sortid": 7,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lead_ingot",
@@ -217,7 +217,7 @@
     {
       "name": "Titaniumingot",
       "type": "item",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titaniumingot",
@@ -226,7 +226,7 @@
     {
       "name": "TitaniumOre",
       "type": "block",
-      "sortid": 6,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ore",
@@ -235,19 +235,11 @@
     {
       "name": "LeadOre",
       "type": "block",
-      "sortid": 5,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lead_ore",
       "path": "~/Blocks/Ores"
-    },
-    {
-      "name": "TitaniumLootTable",
-      "type": "loottable",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "titanium_loot_table"
     },
     {
       "name": "TitaniumIngotCraftingRecipe",
@@ -279,10 +271,11 @@
     {
       "name": "ArtificialLens",
       "type": "item",
-      "sortid": 9,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "artificial_lens"
+      "registry_name": "artificial_lens",
+      "path": "~/misc"
     },
     {
       "name": "ArtificialLensCraftingRecipe",
@@ -309,24 +302,198 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "world_d"
+    },
+    {
+      "name": "LiveStealLens",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_steal_lens",
+      "path": "~/misc"
+    },
+    {
+      "name": "VoidLens",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_lens",
+      "path": "~/misc"
+    },
+    {
+      "name": "DeathLens",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_lens",
+      "path": "~/misc"
+    },
+    {
+      "name": "Malachite",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "malachite",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "LiveCrystal",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_crystal",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "LiveStealLensCraftingRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_steal_lens_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LiveCrystalCraftingRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_crystal_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PurpleSapphire",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_sapphire",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "VoidCrystal",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_crystal",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "VoidCrystalLensCraftingRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_crystal_lens_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "VoidCrystalCraftingRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_crystal_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BlackDiamond",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_diamond",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "Painite",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painite",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "DeathCrystal",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_crystal",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "DeathCrystalCraftingRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_crystal_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DeathCrystalLensCraftingRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_crystal_lens_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "NetherPainiteOre",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_painite_ore",
+      "path": "~/Blocks/Ores"
+    },
+    {
+      "name": "NetherBlackDiamondOre",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_black_diamond_ore",
+      "path": "~/Blocks/Ores"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.worldd.death_saber": "Death Saber",
-      "item.worldd.titaniumingot": "Titaniumingot",
       "item.worldd.saber_handle": "Saber Handle",
       "item.worldd.artificial_lens": "Artificial Lens",
+      "item.worldd.death_crystal": "Death Crystal",
       "item.worldd.rose_quartz": "Rose Quartz",
+      "item.worldd.live_steal_lens": "Live Steal Lens",
+      "item.worldd.painite": "Painite",
       "itemGroup.tabworld_d": "World D",
       "item.worldd.void_saber": "Void Saber",
+      "item.worldd.void_crystal": "Void Crystal",
+      "item.worldd.death_lens": "Death Lens",
+      "item.worldd.live_crystal": "Live Crystal",
       "block.worldd.lead_ore": "Lead Ore",
       "item.worldd.lead_ingot": "Lead Ingot",
-      "item.worldd.live_steal_saber": "Live Steal Saber",
+      "block.worldd.nether_black_diamond_ore": "Nether Black Diamond Ore",
+      "item.worldd.malachite": "Malachite",
       "item.worldd.artificial_saber": "Artificial Saber",
-      "block.worldd.titanium_ore": "Titanium Ore"
+      "item.worldd.death_saber": "Death Saber",
+      "block.worldd.nether_painite_ore": "Nether Painite Ore",
+      "item.worldd.titaniumingot": "Titaniumingot",
+      "item.worldd.void_lens": "Void Lens",
+      "item.worldd.black_diamond": "Black Diamond",
+      "item.worldd.live_steal_saber": "Live Steal Saber",
+      "block.worldd.titanium_ore": "Titanium Ore",
+      "item.worldd.purple_sapphire": "Purple Sapphire"
     }
   },
   "foldersRoot": {
@@ -369,6 +536,10 @@
       },
       {
         "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "misc",
         "children": []
       }
     ]

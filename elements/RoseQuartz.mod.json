@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "rosequartz",
+    "texture": "rosequartz1",
     "customModelName": "Normal",
     "name": "Rose Quartz",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:WorldD"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,

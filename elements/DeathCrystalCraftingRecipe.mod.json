@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BlackDiamond"
+      },
+      {
+        "value": "CUSTOM:Painite"
+      },
+      {
+        "value": "CUSTOM:BlackDiamond"
+      },
+      {
+        "value": "CUSTOM:Painite"
+      },
+      {
+        "value": "CUSTOM:Painite"
+      },
+      {
+        "value": "CUSTOM:Painite"
+      },
+      {
+        "value": "CUSTOM:BlackDiamond"
+      },
+      {
+        "value": "CUSTOM:Painite"
+      },
+      {
+        "value": "CUSTOM:BlackDiamond"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DeathCrystal"
+    },
+    "name": "death_crystal_crafting_recipe",
+    "namespace": "mod"
+  }
+}
