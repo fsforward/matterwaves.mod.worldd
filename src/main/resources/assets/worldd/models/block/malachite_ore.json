@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "worldd:blocks/malachite_ore",
+    "up": "worldd:blocks/malachite_ore",
+    "north": "worldd:blocks/malachite_ore",
+    "east": "worldd:blocks/malachite_ore",
+    "south": "worldd:blocks/malachite_ore",
+    "west": "worldd:blocks/malachite_ore",
+    "particle": "worldd:blocks/malachite_ore"
+  }
+}

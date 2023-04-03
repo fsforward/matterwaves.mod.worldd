@@ -123,17 +123,19 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Nether"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.NETHERRACK"
       }
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 6,
-    "frequencyOnChunk": 4,
-    "minGenerateHeight": 0,
+    "frequencyOnChunk": 3,
+    "minGenerateHeight": 16,
     "maxGenerateHeight": 64
   }
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "worldd:blocks/end_purple_sapphire_ore",
+    "up": "worldd:blocks/end_purple_sapphire_ore",
+    "north": "worldd:blocks/end_purple_sapphire_ore",
+    "east": "worldd:blocks/end_purple_sapphire_ore",
+    "south": "worldd:blocks/end_purple_sapphire_ore",
+    "west": "worldd:blocks/end_purple_sapphire_ore",
+    "particle": "worldd:blocks/end_purple_sapphire_ore"
+  }
+}

@@ -2,6 +2,7 @@
   "item.worldd.saber_handle": "Saber Handle",
   "item.worldd.artificial_lens": "Artificial Lens",
   "item.worldd.death_crystal": "Death Crystal",
+  "block.worldd.purple_sapphire_block": "Purple Sapphire Block",
   "item.worldd.rose_quartz": "Rose Quartz",
   "item.worldd.live_steal_lens": "Live Steal Lens",
   "item.worldd.painite": "Painite",
@@ -19,8 +20,10 @@
   "block.worldd.nether_painite_ore": "Nether Painite Ore",
   "item.worldd.titaniumingot": "Titaniumingot",
   "item.worldd.void_lens": "Void Lens",
+  "block.worldd.end_purple_sapphire_ore": "End Purple Sapphire Ore",
   "item.worldd.black_diamond": "Black Diamond",
   "item.worldd.live_steal_saber": "Live Steal Saber",
+  "block.worldd.malachite_ore": "Malachite Ore",
   "block.worldd.titanium_ore": "Titanium Ore",
   "item.worldd.purple_sapphire": "Purple Sapphire"
 }

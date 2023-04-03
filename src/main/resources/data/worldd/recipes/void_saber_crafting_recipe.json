@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "2 "
+  ],
+  "key": {
+    "1": {
+      "item": "worldd:void_lens"
+    },
+    "2": {
+      "item": "worldd:saber_handle"
+    }
+  },
+  "result": {
+    "item": "worldd:void_saber",
+    "count": 1
+  }
+}

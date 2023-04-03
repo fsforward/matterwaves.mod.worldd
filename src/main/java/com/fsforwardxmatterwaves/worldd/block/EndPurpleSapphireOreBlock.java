@@ -6,7 +6,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.feature.template.RuleTest;
@@ -40,16 +39,16 @@ import java.util.List;
 import java.util.Collections;
 
 import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
-import com.fsforwardxmatterwaves.worldd.item.PainiteItem;
+import com.fsforwardxmatterwaves.worldd.item.PurpleSapphireItem;
 import com.fsforwardxmatterwaves.worldd.WorlddModElements;
 
 @WorlddModElements.ModElement.Tag
-public class NetherPainiteOreBlock extends WorlddModElements.ModElement {
-	@ObjectHolder("worldd:nether_painite_ore")
+public class EndPurpleSapphireOreBlock extends WorlddModElements.ModElement {
+	@ObjectHolder("worldd:end_purple_sapphire_ore")
 	public static final Block block = null;
 
-	public NetherPainiteOreBlock(WorlddModElements instance) {
-		super(instance, 44);
+	public EndPurpleSapphireOreBlock(WorlddModElements instance) {
+		super(instance, 52);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -62,9 +61,9 @@ public class NetherPainiteOreBlock extends WorlddModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(4)
-					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("nether_painite_ore");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).speedFactor(1.1f)
+					.jumpFactor(1.1f));
+			setRegistryName("end_purple_sapphire_ore");
 		}
 
 		@Override
@@ -77,7 +76,7 @@ public class NetherPainiteOreBlock extends WorlddModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(PainiteItem.block));
+			return Collections.singletonList(new ItemStack(PurpleSapphireItem.block));
 		}
 	}
 
@@ -91,7 +90,7 @@ public class NetherPainiteOreBlock extends WorlddModElements.ModElement {
 
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.NETHERRACK)
+			if (blockAt.getBlock() == Blocks.END_STONE)
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -104,23 +103,24 @@ public class NetherPainiteOreBlock extends WorlddModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("worldd:nether_painite_ore_match"), () -> CustomRuleTest.codec);
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("worldd:end_purple_sapphire_ore_match"),
+					() -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.THE_NETHER)
+					if (dimensionType == World.THE_END)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 4)).range(64)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 4)).range(50)
 					.square().func_242731_b(4);
-			event.getRegistry().register(feature.setRegistryName("nether_painite_ore"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("worldd:nether_painite_ore"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("end_purple_sapphire_ore"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("worldd:end_purple_sapphire_ore"), configuredFeature);
 		}
 	}
 

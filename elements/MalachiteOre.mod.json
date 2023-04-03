@@ -2,7 +2,7 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "titanium_ore",
+    "texture": "malachite_ore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,18 +33,18 @@
         "subtract": false
       }
     ],
-    "name": "Titanium Ore",
+    "name": "Malachite Ore",
     "specialInfo": [],
-    "hardness": 4.0,
-    "resistance": 11.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:WorldD"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Malachite"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -73,8 +73,8 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 1.2000000000000002,
-    "jumpFactor": 1.2000000000000002,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -135,7 +135,7 @@
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 6,
     "frequencyOnChunk": 4,
-    "minGenerateHeight": 16,
-    "maxGenerateHeight": 32
+    "minGenerateHeight": 32,
+    "maxGenerateHeight": 40
   }
 }

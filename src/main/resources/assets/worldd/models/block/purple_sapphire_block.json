@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "worldd:blocks/purplesapphire_block",
+    "particle": "worldd:blocks/purplesapphire_block"
+  }
+}
