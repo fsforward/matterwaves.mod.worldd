@@ -34,7 +34,7 @@ public class ArtificialSaberEntitySwingsItemProcedure {
 				}
 			}.check(entity))) {
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 20, (int) 1));
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 40, (int) 2));
 			}
 		}
 	}

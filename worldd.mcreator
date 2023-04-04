@@ -176,7 +176,8 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "saber_handle"
+      "registry_name": "saber_handle",
+      "path": "~/Items/Tools"
     },
     {
       "name": "ArtificialSaber",
@@ -526,12 +527,287 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "GiveOnJoin",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_on_join",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedVoidCrystal",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_void_crystal",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "EnhancedDeathCrystal",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_death_crystal",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "EnhancedLiveCrystalEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_live_crystal_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedLiveCrystal",
+      "type": "item",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_live_crystal",
+      "path": "~/Items/Ores/Gems"
+    },
+    {
+      "name": "EnhancedDeathCrystalEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_death_crystal_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedVoidCrystalEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_void_crystal_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedLiveCrystalItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_live_crystal_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedLiveStealSaber",
+      "type": "tool",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_live_steal_saber",
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "EnhancedLiveStealSaberCraftingRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_live_steal_saber_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EnhancedDeathSaber",
+      "type": "tool",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_death_saber",
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "EnhancedVoidSaberEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_void_saber_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedVoidSaberToolInHandTick",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_void_saber_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedVoidSaber",
+      "type": "tool",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_void_saber",
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "EnhancedDeathSaberToolInHandTick",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_death_saber_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedVoidCrystalItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_void_crystal_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedDeathCrystalItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_death_crystal_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "OnGrant",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RandomInt",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.worldd.enhanced_death_crystal": "Enhanced Death Crystal",
       "item.worldd.saber_handle": "Saber Handle",
       "item.worldd.artificial_lens": "Artificial Lens",
       "item.worldd.death_crystal": "Death Crystal",
@@ -539,18 +815,23 @@
       "item.worldd.live_steal_lens": "Live Steal Lens",
       "item.worldd.rose_quartz": "Rose Quartz",
       "itemGroup.tabworld_d": "World D",
+      "item.worldd.enhanced_void_saber": "Enhanced Void Saber",
+      "item.worldd.enhanced_death_saber": "Enhanced Death Saber",
       "item.worldd.void_saber": "Void Saber",
       "item.worldd.void_crystal": "Void Crystal",
       "item.worldd.death_lens": "Death Lens",
       "item.worldd.live_crystal": "Live Crystal",
+      "item.worldd.enhanced_live_crystal": "Enhanced Live Crystal",
       "block.worldd.lead_ore": "Lead Ore",
       "item.worldd.lead_ingot": "Lead Ingot",
       "block.worldd.nether_black_diamond_ore": "Nether Black Diamond Ore",
       "item.worldd.malachite": "Malachite",
       "item.worldd.artificial_saber": "Artificial Saber",
+      "item.worldd.enhanced_void_crystal": "Enhanced Void Crystal",
       "item.worldd.death_saber": "Death Saber",
       "block.worldd.nether_painite_ore": "Nether Painite Ore",
       "item.worldd.titaniumingot": "Titaniumingot",
+      "item.worldd.enhanced_live_steal_saber": "Enhanced Live Steal Saber",
       "item.worldd.void_lens": "Void Lens",
       "block.worldd.end_purple_sapphire_ore": "End Purple Sapphire Ore",
       "item.worldd.black_diamond": "Black Diamond",

@@ -13,13 +13,20 @@
     "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 4.0,
-    "attackSpeed": 3.0,
+    "attackSpeed": 2.5,
     "enchantability": 12,
-    "damageVsEntity": 6.0,
-    "usageCount": 420,
+    "damageVsEntity": 5.0,
+    "usageCount": 366,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:Titaniumingot"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,

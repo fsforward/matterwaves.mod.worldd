@@ -1,0 +1,48 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "enhanced_void_saber",
+    "customModelName": "Normal",
+    "name": "Enhanced Void Saber",
+    "specialInfo": [
+      "The only weapon the meets divinity... its superior to everything"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WorldD"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 6,
+    "efficiency": 14.0,
+    "attackSpeed": 3.0,
+    "enchantability": 1,
+    "damageVsEntity": 16.0,
+    "usageCount": 1536,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:VoidSaber"
+      },
+      {
+        "value": "CUSTOM:VoidLens"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "VoidSaberLivingEntityIsHitWithTool"
+    },
+    "onItemInInventoryTick": {
+      "name": "EnhancedLiveCrystalItemInInventoryTick"
+    },
+    "onItemInUseTick": {
+      "name": "EnhancedVoidSaberToolInHandTick"
+    },
+    "onEntitySwing": {
+      "name": "EnhancedVoidSaberEntitySwingsItem"
+    }
+  }
+}

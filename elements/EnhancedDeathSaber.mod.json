@@ -1,0 +1,48 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "enhanced_death_saber",
+    "customModelName": "Normal",
+    "name": "Enhanced Death Saber",
+    "specialInfo": [
+      "This weapon would be the closest to a divine weapon..."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WorldD"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 5,
+    "efficiency": 13.0,
+    "attackSpeed": 1.2,
+    "enchantability": 1,
+    "damageVsEntity": 24.0,
+    "usageCount": 512,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:DeathSaber"
+      },
+      {
+        "value": "CUSTOM:DeathLens"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DeathSaberLivingEntityIsHitWithTool"
+    },
+    "onItemInInventoryTick": {
+      "name": "EnhancedLiveCrystalItemInInventoryTick"
+    },
+    "onItemInUseTick": {
+      "name": "EnhancedDeathSaberToolInHandTick"
+    },
+    "onEntitySwing": {
+      "name": "DeathSaberEntitySwingsItem"
+    }
+  }
+}

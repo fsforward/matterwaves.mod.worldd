@@ -6,6 +6,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
@@ -33,7 +34,7 @@ public class ArtificialSaberItem extends WorlddModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 420;
+				return 366;
 			}
 
 			public float getEfficiency() {
@@ -41,7 +42,7 @@ public class ArtificialSaberItem extends WorlddModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 4f;
+				return 3f;
 			}
 
 			public int getHarvestLevel() {
@@ -53,9 +54,9 @@ public class ArtificialSaberItem extends WorlddModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(Items.DIAMOND), new ItemStack(TitaniumingotItem.block));
 			}
-		}, 3, -1f, new Item.Properties().group(WorldDItemGroup.tab)) {
+		}, 3, -1.5f, new Item.Properties().group(WorldDItemGroup.tab)) {
 			@Override
 			public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 				boolean retval = super.onEntitySwing(itemstack, entity);

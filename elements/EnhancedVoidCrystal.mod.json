@@ -1,0 +1,50 @@
+{
+  "_fv": 33,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "enhanced_void_crystal",
+    "customModelName": "Normal",
+    "name": "Enhanced Void Crystal",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:WorldD"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "This mysterious crystal holds a unimaginable power..... Be...Careful."
+    ],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "EnhancedLiveCrystalItemInInventoryTick"
+    },
+    "onEntitySwing": {
+      "name": "EnhancedVoidCrystalItemInInventoryTick"
+    },
+    "isFood": false,
+    "nutritionalValue": 1,
+    "saturation": 0.1,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

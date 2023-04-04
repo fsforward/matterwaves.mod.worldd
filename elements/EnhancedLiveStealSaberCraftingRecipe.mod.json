@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LiveStealLens"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SaberHandle"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:EnhancedLiveCrystal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnhancedLiveStealSaber"
+    },
+    "name": "enhanced_live_steal_saber_crafting_recipe",
+    "namespace": "mod"
+  }
+}

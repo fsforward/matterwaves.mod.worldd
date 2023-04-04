@@ -9,18 +9,16 @@ import java.util.Map;
 
 import com.fsforwardxmatterwaves.worldd.WorlddMod;
 
-public class LiveStealSaberEntitySwingsItemProcedure {
+public class EnhancedVoidSaberToolInHandTickProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				WorlddMod.LOGGER.warn("Failed to load dependency entity for procedure LiveStealSaberEntitySwingsItem!");
+				WorlddMod.LOGGER.warn("Failed to load dependency entity for procedure EnhancedVoidSaberToolInHandTick!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (entity.isInWaterRainOrBubbleColumn()) {
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 25, (int) 3));
-		}
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, (int) 60, (int) 1));
 	}
 }

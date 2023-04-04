@@ -28,8 +28,8 @@ public class LiveStealSaberLivingEntityIsHitWithToolProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) > 14) {
-			entity.attackEntityFrom(DamageSource.ON_FIRE, (float) 5);
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) > 20) {
+			entity.attackEntityFrom(DamageSource.ON_FIRE, (float) 6);
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.attemptDamageItem((int) 10, new Random(), null)) {
@@ -49,7 +49,7 @@ public class LiveStealSaberLivingEntityIsHitWithToolProcedure {
 				return false;
 			}
 		}.check(entity)) {
-			entity.attackEntityFrom(DamageSource.GENERIC, (float) 2);
+			entity.attackEntityFrom(DamageSource.GENERIC, (float) 4);
 		}
 	}
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "worldd:live_steal_lens"
+    },
+    "4": {
+      "item": "worldd:saber_handle"
+    },
+    "6": {
+      "item": "worldd:enhanced_live_crystal"
+    }
+  },
+  "result": {
+    "item": "worldd:enhanced_live_steal_saber",
+    "count": 1
+  }
+}

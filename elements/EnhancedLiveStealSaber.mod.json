@@ -1,0 +1,43 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "enhanced_livesteal_saber",
+    "customModelName": "Normal",
+    "name": "Enhanced Live Steal Saber",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:WorldD"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 5,
+    "efficiency": 13.0,
+    "attackSpeed": 3.0,
+    "enchantability": 2,
+    "damageVsEntity": 11.0,
+    "usageCount": 1024,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:LiveStealSaber"
+      },
+      {
+        "value": "CUSTOM:LiveStealLens"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "LiveStealSaberLivingEntityIsHitWithTool"
+    },
+    "onItemInInventoryTick": {
+      "name": "EnhancedLiveCrystalItemInInventoryTick"
+    },
+    "onEntitySwing": {
+      "name": "LiveStealSaberEntitySwingsItem"
+    }
+  }
+}
