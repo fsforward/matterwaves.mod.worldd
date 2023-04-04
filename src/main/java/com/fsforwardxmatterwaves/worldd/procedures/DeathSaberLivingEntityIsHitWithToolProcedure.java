@@ -6,7 +6,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
@@ -31,16 +30,12 @@ public class DeathSaberLivingEntityIsHitWithToolProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) >= 15) {
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) >= 18) {
 			entity.attackEntityFrom(DamageSource.GENERIC, (float) 4);
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 60, (int) 1));
-			entity.setMotionMultiplier(Blocks.AIR.getDefaultState(), new Vector3d(0.25D, (double) 0.05F, 0.25D));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 20, (int) 1));
 			if (entity instanceof LivingEntity) {
 				((LivingEntity) entity).removePotionEffect(Effects.STRENGTH);
-			}
-			if (entity instanceof PlayerEntity) {
-				((PlayerEntity) entity).addExhaustion((float) 0.25);
 			}
 			{
 				ItemStack _ist = itemstack;
@@ -51,15 +46,12 @@ public class DeathSaberLivingEntityIsHitWithToolProcedure {
 			}
 		} else if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getMaxHealth() : -1) == MathHelper.nextDouble(new Random(), 25, 250)) {
 			if (entity.isImmuneToFire()) {
-				entity.attackEntityFrom(DamageSource.GENERIC, (float) 8);
+				entity.attackEntityFrom(DamageSource.GENERIC, (float) 6);
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 60, (int) 3));
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 60, (int) 1));
 				entity.setMotionMultiplier(Blocks.AIR.getDefaultState(), new Vector3d(0.25D, (double) 0.05F, 0.25D));
 				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).removePotionEffect(Effects.STRENGTH);
-				}
-				if (entity instanceof PlayerEntity) {
-					((PlayerEntity) entity).addExhaustion((float) 0.75);
 				}
 				{
 					ItemStack _ist = itemstack;

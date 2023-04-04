@@ -9,7 +9,6 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.entity.LivingEntity;
@@ -22,6 +21,7 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 import com.fsforwardxmatterwaves.worldd.procedures.VoidSaberLivingEntityIsHitWithToolProcedure;
+import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
 import com.fsforwardxmatterwaves.worldd.WorlddModElements;
 
 @WorlddModElements.ModElement.Tag
@@ -59,7 +59,7 @@ public class VoidSaberItem extends WorlddModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -1.1999999999999997f, new Item.Properties().group(ItemGroup.TOOLS).isImmuneToFire()) {
+		}, 3, -1.1999999999999997f, new Item.Properties().group(WorldDItemGroup.tab).isImmuneToFire()) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

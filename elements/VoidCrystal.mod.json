@@ -8,7 +8,7 @@
     "name": "Void Crystal",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:WorldD"
     },
     "stackSize": 64,
     "enchantability": 0,

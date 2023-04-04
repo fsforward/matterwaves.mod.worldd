@@ -118,7 +118,7 @@ public class EndPurpleSapphireOreBlock extends WorlddModElements.ModElement {
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 4)).range(50)
-					.square().func_242731_b(4);
+					.square().func_242731_b(6);
 			event.getRegistry().register(feature.setRegistryName("end_purple_sapphire_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("worldd:end_purple_sapphire_ore"), configuredFeature);
 		}

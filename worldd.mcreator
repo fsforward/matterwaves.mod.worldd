@@ -466,15 +466,6 @@
       "path": "~/Blocks/Ores"
     },
     {
-      "name": "PurpleSapphireBlock",
-      "type": "block",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purple_sapphire_block",
-      "path": "~/Blocks"
-    },
-    {
       "name": "EndPurpleSapphireOre",
       "type": "block",
       "sortid": 52,
@@ -518,6 +509,23 @@
       "locked_code": false,
       "registry_name": "void_saber_crafting_recipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "ArtificialSaberEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "artificial_saber_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -527,10 +535,9 @@
       "item.worldd.saber_handle": "Saber Handle",
       "item.worldd.artificial_lens": "Artificial Lens",
       "item.worldd.death_crystal": "Death Crystal",
-      "block.worldd.purple_sapphire_block": "Purple Sapphire Block",
-      "item.worldd.rose_quartz": "Rose Quartz",
-      "item.worldd.live_steal_lens": "Live Steal Lens",
       "item.worldd.painite": "Painite",
+      "item.worldd.live_steal_lens": "Live Steal Lens",
+      "item.worldd.rose_quartz": "Rose Quartz",
       "itemGroup.tabworld_d": "World D",
       "item.worldd.void_saber": "Void Saber",
       "item.worldd.void_crystal": "Void Crystal",

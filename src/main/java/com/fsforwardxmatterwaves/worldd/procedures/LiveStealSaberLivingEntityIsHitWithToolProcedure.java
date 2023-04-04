@@ -9,6 +9,7 @@ import net.minecraft.entity.Entity;
 
 import java.util.Random;
 import java.util.Map;
+import java.util.Collection;
 
 import com.fsforwardxmatterwaves.worldd.WorlddMod;
 
@@ -27,8 +28,8 @@ public class LiveStealSaberLivingEntityIsHitWithToolProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) > 8) {
-			entity.attackEntityFrom(DamageSource.ON_FIRE, (float) 8);
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) > 14) {
+			entity.attackEntityFrom(DamageSource.ON_FIRE, (float) 5);
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.attemptDamageItem((int) 10, new Random(), null)) {
@@ -36,9 +37,19 @@ public class LiveStealSaberLivingEntityIsHitWithToolProcedure {
 					_ist.setDamage(0);
 				}
 			}
-		} else {
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 60, (int) 1, (false), (true)));
+		} else if (new Object() {
+			boolean check(Entity _entity) {
+				if (_entity instanceof LivingEntity) {
+					Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+					for (EffectInstance effect : effects) {
+						if (effect.getPotion() == Effects.REGENERATION)
+							return true;
+					}
+				}
+				return false;
+			}
+		}.check(entity)) {
+			entity.attackEntityFrom(DamageSource.GENERIC, (float) 2);
 		}
 	}
 }
