@@ -23,7 +23,8 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.AbstractMap;
 
-import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidCrystalItemInInventoryTickProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberOnPlayerStoppedUsingProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidCrystalItemInHandTickProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInInventoryTickProcedure;
 import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
 import com.fsforwardxmatterwaves.worldd.WorlddModElements;
@@ -81,17 +82,14 @@ public class EnhancedVoidCrystalItem extends WorlddModElements.ModElement {
 		}
 
 		@Override
-		public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-			boolean retval = super.onEntitySwing(itemstack, entity);
+		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entity, int time) {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			World world = entity.world;
 
-			EnhancedVoidCrystalItemInInventoryTickProcedure
+			EnhancedVoidSaberOnPlayerStoppedUsingProcedure
 					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			return retval;
 		}
 
 		@Override
@@ -100,6 +98,10 @@ public class EnhancedVoidCrystalItem extends WorlddModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
+			if (selected)
+
+				EnhancedVoidCrystalItemInHandTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 
 			EnhancedLiveCrystalItemInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));

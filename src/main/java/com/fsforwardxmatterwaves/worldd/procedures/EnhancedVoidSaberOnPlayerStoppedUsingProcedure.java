@@ -5,8 +5,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.IWorld;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
@@ -14,17 +12,17 @@ import java.util.Map;
 
 import com.fsforwardxmatterwaves.worldd.WorlddMod;
 
-public class EnhancedDeathCrystalItemInInventoryTickProcedure {
+public class EnhancedVoidSaberOnPlayerStoppedUsingProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				WorlddMod.LOGGER.warn("Failed to load dependency world for procedure EnhancedDeathCrystalItemInInventoryTick!");
+				WorlddMod.LOGGER.warn("Failed to load dependency world for procedure EnhancedVoidSaberOnPlayerStoppedUsing!");
 			return;
 		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				WorlddMod.LOGGER.warn("Failed to load dependency entity for procedure EnhancedDeathCrystalItemInInventoryTick!");
+				WorlddMod.LOGGER.warn("Failed to load dependency entity for procedure EnhancedVoidSaberOnPlayerStoppedUsing!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
@@ -51,9 +49,9 @@ public class EnhancedDeathCrystalItemInInventoryTickProcedure {
 
 			private void run() {
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.STRENGTH, (int) 25, (int) 1));
+					((LivingEntity) entity).clearActivePotions();
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}.start(world, (int) 150);
+		}.start(world, (int) 30);
 	}
 }

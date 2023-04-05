@@ -50,6 +50,8 @@ public class LiveStealSaberLivingEntityIsHitWithToolProcedure {
 			}
 		}.check(entity)) {
 			entity.attackEntityFrom(DamageSource.GENERIC, (float) 4);
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 10, (int) 1));
 		}
 	}
 }

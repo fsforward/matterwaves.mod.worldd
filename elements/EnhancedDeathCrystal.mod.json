@@ -35,6 +35,12 @@
     "onItemInInventoryTick": {
       "name": "EnhancedLiveCrystalItemInInventoryTick"
     },
+    "onItemInUseTick": {
+      "name": "EnhancedDeathCrystalItemInHandTick"
+    },
+    "onStoppedUsing": {
+      "name": "EnhancedVoidSaberOnPlayerStoppedUsing"
+    },
     "onEntitySwing": {
       "name": "EnhancedDeathCrystalItemInInventoryTick"
     },

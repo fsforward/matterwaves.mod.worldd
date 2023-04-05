@@ -19,6 +19,7 @@ import java.util.AbstractMap;
 
 import com.fsforwardxmatterwaves.worldd.procedures.LiveStealSaberLivingEntityIsHitWithToolProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.LiveStealSaberEntitySwingsItemProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberOnPlayerStoppedUsingProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInInventoryTickProcedure;
 import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
 import com.fsforwardxmatterwaves.worldd.WorlddModElements;
@@ -84,6 +85,18 @@ public class EnhancedLiveStealSaberItem extends WorlddModElements.ModElement {
 				LiveStealSaberEntitySwingsItemProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
+			}
+
+			@Override
+			public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entity, int time) {
+				super.onPlayerStoppedUsing(itemstack, world, entity, time);
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+
+				EnhancedVoidSaberOnPlayerStoppedUsingProcedure
+						.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+								.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 
 			@Override

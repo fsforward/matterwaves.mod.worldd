@@ -25,12 +25,18 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": false,
+    "hasGlow": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
       "name": "EnhancedLiveCrystalItemInInventoryTick"
+    },
+    "onItemInUseTick": {
+      "name": "EnhancedLiveCrystalItemInHandTick"
+    },
+    "onStoppedUsing": {
+      "name": "EnhancedVoidSaberOnPlayerStoppedUsing"
     },
     "onEntitySwing": {
       "name": "EnhancedLiveCrystalEntitySwingsItem"

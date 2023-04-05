@@ -19,9 +19,11 @@ import java.util.stream.Stream;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
+import java.util.Collections;
 import java.util.AbstractMap;
 
-import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInInventoryTickProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberOnPlayerStoppedUsingProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedDeathSaberToolInInventoryTickProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedDeathSaberToolInHandTickProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.DeathSaberLivingEntityIsHitWithToolProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.DeathSaberEntitySwingsItemProcedure;
@@ -49,7 +51,7 @@ public class EnhancedDeathSaberItem extends WorlddModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 22f;
+				return 18f;
 			}
 
 			public int getHarvestLevel() {
@@ -98,6 +100,18 @@ public class EnhancedDeathSaberItem extends WorlddModElements.ModElement {
 			}
 
 			@Override
+			public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entity, int time) {
+				super.onPlayerStoppedUsing(itemstack, world, entity, time);
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+
+				EnhancedVoidSaberOnPlayerStoppedUsingProcedure
+						.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+								.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			}
+
+			@Override
 			public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
 				super.inventoryTick(itemstack, world, entity, slot, selected);
 				double x = entity.getPosX();
@@ -105,11 +119,9 @@ public class EnhancedDeathSaberItem extends WorlddModElements.ModElement {
 				double z = entity.getPosZ();
 				if (selected)
 
-					EnhancedDeathSaberToolInHandTickProcedure.executeProcedure(
-							Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-									.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+					EnhancedDeathSaberToolInHandTickProcedure.executeProcedure(Collections.emptyMap());
 
-				EnhancedLiveCrystalItemInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+				EnhancedDeathSaberToolInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 		}.setRegistryName("enhanced_death_saber"));

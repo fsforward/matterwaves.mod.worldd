@@ -22,9 +22,8 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 import com.fsforwardxmatterwaves.worldd.procedures.VoidSaberLivingEntityIsHitWithToolProcedure;
-import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberToolInHandTickProcedure;
-import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberEntitySwingsItemProcedure;
-import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInInventoryTickProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberToolInInventoryTickProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberOnPlayerStoppedUsingProcedure;
 import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
 import com.fsforwardxmatterwaves.worldd.WorlddModElements;
 
@@ -49,7 +48,7 @@ public class EnhancedVoidSaberItem extends WorlddModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 14f;
+				return 12.5f;
 			}
 
 			public int getHarvestLevel() {
@@ -84,17 +83,15 @@ public class EnhancedVoidSaberItem extends WorlddModElements.ModElement {
 			}
 
 			@Override
-			public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-				boolean retval = super.onEntitySwing(itemstack, entity);
+			public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entity, int time) {
+				super.onPlayerStoppedUsing(itemstack, world, entity, time);
 				double x = entity.getPosX();
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
-				World world = entity.world;
 
-				EnhancedVoidSaberEntitySwingsItemProcedure
+				EnhancedVoidSaberOnPlayerStoppedUsingProcedure
 						.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
 								.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-				return retval;
 			}
 
 			@Override
@@ -103,12 +100,8 @@ public class EnhancedVoidSaberItem extends WorlddModElements.ModElement {
 				double x = entity.getPosX();
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
-				if (selected)
 
-					EnhancedVoidSaberToolInHandTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-
-				EnhancedLiveCrystalItemInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+				EnhancedVoidSaberToolInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 		}.setRegistryName("enhanced_void_saber"));

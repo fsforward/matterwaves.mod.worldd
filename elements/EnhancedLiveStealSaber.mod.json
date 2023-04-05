@@ -36,6 +36,9 @@
     "onItemInInventoryTick": {
       "name": "EnhancedLiveCrystalItemInInventoryTick"
     },
+    "onStoppedUsing": {
+      "name": "EnhancedVoidSaberOnPlayerStoppedUsing"
+    },
     "onEntitySwing": {
       "name": "LiveStealSaberEntitySwingsItem"
     }

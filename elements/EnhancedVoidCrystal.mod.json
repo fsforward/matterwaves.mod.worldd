@@ -34,8 +34,11 @@
     "onItemInInventoryTick": {
       "name": "EnhancedLiveCrystalItemInInventoryTick"
     },
-    "onEntitySwing": {
-      "name": "EnhancedVoidCrystalItemInInventoryTick"
+    "onItemInUseTick": {
+      "name": "EnhancedVoidCrystalItemInHandTick"
+    },
+    "onStoppedUsing": {
+      "name": "EnhancedVoidSaberOnPlayerStoppedUsing"
     },
     "isFood": false,
     "nutritionalValue": 1,

@@ -23,8 +23,10 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.AbstractMap;
 
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberOnPlayerStoppedUsingProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInInventoryTickProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedDeathCrystalItemInInventoryTickProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedDeathCrystalItemInHandTickProcedure;
 import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
 import com.fsforwardxmatterwaves.worldd.WorlddModElements;
 
@@ -96,11 +98,26 @@ public class EnhancedDeathCrystalItem extends WorlddModElements.ModElement {
 		}
 
 		@Override
+		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entity, int time) {
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+
+			EnhancedVoidSaberOnPlayerStoppedUsingProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+
+		@Override
 		public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
+			if (selected)
+
+				EnhancedDeathCrystalItemInHandTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 
 			EnhancedLiveCrystalItemInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));

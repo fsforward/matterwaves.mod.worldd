@@ -17,7 +17,7 @@
     "efficiency": 13.0,
     "attackSpeed": 1.2,
     "enchantability": 1,
-    "damageVsEntity": 24.0,
+    "damageVsEntity": 20.0,
     "usageCount": 512,
     "blocksAffected": [],
     "hasGlow": false,
@@ -36,10 +36,13 @@
       "name": "DeathSaberLivingEntityIsHitWithTool"
     },
     "onItemInInventoryTick": {
-      "name": "EnhancedLiveCrystalItemInInventoryTick"
+      "name": "EnhancedDeathSaberToolInInventoryTick"
     },
     "onItemInUseTick": {
       "name": "EnhancedDeathSaberToolInHandTick"
+    },
+    "onStoppedUsing": {
+      "name": "EnhancedVoidSaberOnPlayerStoppedUsing"
     },
     "onEntitySwing": {
       "name": "DeathSaberEntitySwingsItem"
