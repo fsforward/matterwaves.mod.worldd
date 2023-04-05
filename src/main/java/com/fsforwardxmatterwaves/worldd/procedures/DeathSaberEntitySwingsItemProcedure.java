@@ -19,7 +19,7 @@ public class DeathSaberEntitySwingsItemProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		entity.attackEntityFrom(DamageSource.GENERIC, (float) 1);
+		entity.attackEntityFrom(DamageSource.GENERIC, (float) 0.8);
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 60, (int) 1));
 	}

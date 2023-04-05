@@ -20,7 +20,7 @@ public class VoidSaberLivingEntityIsHitWithToolProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 20, (int) 1));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 10, (int) 1));
 		entity.attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 3);
 	}
 }

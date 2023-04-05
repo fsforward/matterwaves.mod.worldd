@@ -51,7 +51,7 @@ public class EnhancedDeathSaberItem extends WorlddModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 18f;
+				return 17f;
 			}
 
 			public int getHarvestLevel() {
