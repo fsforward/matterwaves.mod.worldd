@@ -14,9 +14,9 @@ import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
-import com.fsforwardxmatterwaves.worldd.item.VoidSaberItem;
-import com.fsforwardxmatterwaves.worldd.item.LiveStealSaberItem;
-import com.fsforwardxmatterwaves.worldd.item.DeathSaberItem;
+import com.fsforwardxmatterwaves.worldd.item.EnhancedVoidCrystalItem;
+import com.fsforwardxmatterwaves.worldd.item.EnhancedLiveCrystalItem;
+import com.fsforwardxmatterwaves.worldd.item.EnhancedDeathCrystalItem;
 import com.fsforwardxmatterwaves.worldd.WorlddModVariables;
 import com.fsforwardxmatterwaves.worldd.WorlddMod;
 
@@ -55,21 +55,21 @@ public class GiveOnJoinProcedure {
 			if ((entity.getCapability(WorlddModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new WorlddModVariables.PlayerVariables())).RandomInt == 1) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(DeathSaberItem.block);
+					ItemStack _setstack = new ItemStack(EnhancedLiveCrystalItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
 			} else if ((entity.getCapability(WorlddModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new WorlddModVariables.PlayerVariables())).RandomInt == 2) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(LiveStealSaberItem.block);
+					ItemStack _setstack = new ItemStack(EnhancedDeathCrystalItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
 			} else if ((entity.getCapability(WorlddModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new WorlddModVariables.PlayerVariables())).RandomInt == 3) {
 				if (entity instanceof PlayerEntity) {
-					ItemStack _setstack = new ItemStack(VoidSaberItem.block);
+					ItemStack _setstack = new ItemStack(EnhancedVoidCrystalItem.block);
 					_setstack.setCount((int) 1);
 					ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 				}
