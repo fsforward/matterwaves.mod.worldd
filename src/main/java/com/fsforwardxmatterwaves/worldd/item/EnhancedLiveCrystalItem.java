@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberOnPlayerStoppedUsingProcedure;
-import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInInventoryTickProcedure;
+import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInInventoryTick2Procedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInHandTickProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalEntitySwingsItemProcedure;
 import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
@@ -69,9 +69,8 @@ public class EnhancedLiveCrystalItem extends WorlddModElements.ModElement {
 			double z = entity.getPosZ();
 			World world = entity.world;
 
-			EnhancedLiveCrystalEntitySwingsItemProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			EnhancedLiveCrystalEntitySwingsItemProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 
@@ -97,7 +96,7 @@ public class EnhancedLiveCrystalItem extends WorlddModElements.ModElement {
 				EnhancedLiveCrystalItemInHandTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 
-			EnhancedLiveCrystalItemInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+			EnhancedLiveCrystalItemInInventoryTick2Procedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}

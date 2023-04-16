@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "titanium_ingot",
     "customModelName": "Normal",
-    "name": "Titaniumingot",
+    "name": "TitaniumIngot",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:WorldD"

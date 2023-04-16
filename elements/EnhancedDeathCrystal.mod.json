@@ -41,9 +41,6 @@
     "onStoppedUsing": {
       "name": "EnhancedVoidSaberOnPlayerStoppedUsing"
     },
-    "onEntitySwing": {
-      "name": "EnhancedDeathCrystalItemInInventoryTick"
-    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

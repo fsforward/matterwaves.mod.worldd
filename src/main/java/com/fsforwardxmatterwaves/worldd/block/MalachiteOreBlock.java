@@ -61,7 +61,8 @@ public class MalachiteOreBlock extends WorlddModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.9999999999999998f, 10f)
+					.setLightLevel(s -> 0));
 			setRegistryName("malachite_ore");
 		}
 

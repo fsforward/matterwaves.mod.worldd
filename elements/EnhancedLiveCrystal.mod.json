@@ -30,7 +30,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
-      "name": "EnhancedLiveCrystalItemInInventoryTick"
+      "name": "EnhancedLiveCrystalItemInInventoryTick2"
     },
     "onItemInUseTick": {
       "name": "EnhancedLiveCrystalItemInHandTick"

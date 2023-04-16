@@ -13,34 +13,34 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:DeathCrystal"
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:DeathCrystal"
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:DeathCrystal"
       },
       {
-        "value": "CUSTOM:LiveStealSaber"
+        "value": "CUSTOM:DeathSaber"
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:DeathCrystal"
       },
       {
-        "value": "CUSTOM:EnhancedLiveCrystal"
+        "value": "CUSTOM:EnhancedDeathCrystal"
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:DeathCrystal"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EnhancedLiveStealSaber"
+      "value": "CUSTOM:EnhancedDeathSaber"
     },
-    "name": "enhanced_live_steal_saber_crafting_recipe",
+    "name": "enhanced_death_saber_crafting_recipe",
     "namespace": "mod"
   }
 }

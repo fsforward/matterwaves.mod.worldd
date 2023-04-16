@@ -35,7 +35,7 @@
     ],
     "name": "Malachite Ore",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 1.9999999999999998,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,

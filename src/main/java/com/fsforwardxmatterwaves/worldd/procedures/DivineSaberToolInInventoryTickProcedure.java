@@ -2,7 +2,6 @@ package com.fsforwardxmatterwaves.worldd.procedures;
 
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
@@ -11,12 +10,12 @@ import java.util.Collection;
 
 import com.fsforwardxmatterwaves.worldd.WorlddMod;
 
-public class EnhancedLiveCrystalItemInInventoryTickProcedure {
+public class DivineSaberToolInInventoryTickProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				WorlddMod.LOGGER.warn("Failed to load dependency entity for procedure EnhancedLiveCrystalItemInInventoryTick!");
+				WorlddMod.LOGGER.warn("Failed to load dependency entity for procedure DivineSaberToolInInventoryTick!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -33,13 +32,9 @@ public class EnhancedLiveCrystalItemInInventoryTickProcedure {
 			}
 		}.check(entity))) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 600, (int) 4));
-		}
-		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).getAbsorptionAmount() : 0) == 1) {
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 900, (int) 5));
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.STRENGTH, (int) 140, (int) 1));
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, (int) 100, (int) 2));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 60, (int) 1));
 		}
 	}
 }

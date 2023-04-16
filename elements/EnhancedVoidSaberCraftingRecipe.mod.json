@@ -13,34 +13,34 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:VoidCrystal"
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:VoidCrystal"
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:VoidCrystal"
       },
       {
-        "value": "CUSTOM:LiveStealSaber"
+        "value": "CUSTOM:VoidSaber"
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:VoidCrystal"
       },
       {
-        "value": "CUSTOM:EnhancedLiveCrystal"
+        "value": "CUSTOM:EnhancedVoidCrystal"
       },
       {
-        "value": "CUSTOM:LiveCrystal"
+        "value": "CUSTOM:VoidCrystal"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EnhancedLiveStealSaber"
+      "value": "CUSTOM:EnhancedVoidSaber"
     },
-    "name": "enhanced_live_steal_saber_crafting_recipe",
+    "name": "enhanced_void_saber_crafting_recipe",
     "namespace": "mod"
   }
 }

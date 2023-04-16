@@ -25,7 +25,6 @@ import java.util.AbstractMap;
 
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedVoidSaberOnPlayerStoppedUsingProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedLiveCrystalItemInInventoryTickProcedure;
-import com.fsforwardxmatterwaves.worldd.procedures.EnhancedDeathCrystalItemInInventoryTickProcedure;
 import com.fsforwardxmatterwaves.worldd.procedures.EnhancedDeathCrystalItemInHandTickProcedure;
 import com.fsforwardxmatterwaves.worldd.itemgroup.WorldDItemGroup;
 import com.fsforwardxmatterwaves.worldd.WorlddModElements;
@@ -81,20 +80,6 @@ public class EnhancedDeathCrystalItem extends WorlddModElements.ModElement {
 			super.addInformation(itemstack, world, list, flag);
 			list.add(new StringTextComponent("Oh no.. Death is nearby"));
 			list.add(new StringTextComponent("be careful with it.. it holds a evil power"));
-		}
-
-		@Override
-		public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-			boolean retval = super.onEntitySwing(itemstack, entity);
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-			World world = entity.world;
-
-			EnhancedDeathCrystalItemInInventoryTickProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			return retval;
 		}
 
 		@Override

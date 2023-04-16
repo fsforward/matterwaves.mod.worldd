@@ -1,19 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "  2",
-    " 4 ",
-    "6  "
+    " 12",
+    "345",
+    "67 "
   ],
   "key": {
+    "1": {
+      "item": "worldd:live_crystal"
+    },
     "2": {
-      "item": "worldd:live_steal_lens"
+      "item": "worldd:live_crystal"
+    },
+    "3": {
+      "item": "worldd:live_crystal"
     },
     "4": {
-      "item": "worldd:saber_handle"
+      "item": "worldd:live_steal_saber"
+    },
+    "5": {
+      "item": "worldd:live_crystal"
     },
     "6": {
       "item": "worldd:enhanced_live_crystal"
+    },
+    "7": {
+      "item": "worldd:live_crystal"
     }
   },
   "result": {

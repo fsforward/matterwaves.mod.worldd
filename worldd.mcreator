@@ -575,10 +575,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -876,6 +872,114 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "EnhancedVoidSaberCraftingRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_void_saber_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EnhancedDeathSaberCraftingRecipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_death_saber_crafting_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EnhancedLiveCrystalItemInInventoryTick2",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_live_crystal_item_in_inventory_tick_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DivineSaberToolInInventoryTick",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_saber_tool_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Tools/Enhanced"
+    },
+    {
+      "name": "DivineSaber",
+      "type": "tool",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_saber",
+      "path": "~/Items/Tools/Enhanced"
+    },
+    {
+      "name": "TheSaberCraftingRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_saber_crafting_recipe",
+      "path": "~/Items/Tools/Enhanced"
+    },
+    {
+      "name": "TheDivineSaberCraftingRecipe2",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_divine_saber_crafting_recipe_2",
+      "path": "~/Items/Tools/Enhanced"
+    },
+    {
+      "name": "DivineSaberLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_saber_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Tools/Enhanced"
     }
   ],
   "variable_elements": [
@@ -916,9 +1020,10 @@
       "item.worldd.malachite": "Malachite",
       "item.worldd.artificial_saber": "Artificial Saber",
       "item.worldd.enhanced_void_crystal": "Enhanced Void Crystal",
+      "item.worldd.divine_saber": "Divine Saber",
       "item.worldd.death_saber": "Death Saber",
       "block.worldd.nether_painite_ore": "Nether Painite Ore",
-      "item.worldd.titaniumingot": "Titaniumingot",
+      "item.worldd.titaniumingot": "TitaniumIngot",
       "item.worldd.enhanced_live_steal_saber": "Enhanced Live Steal Saber",
       "item.worldd.void_lens": "Void Lens",
       "block.worldd.end_purple_sapphire_ore": "End Purple Sapphire Ore",
@@ -959,7 +1064,12 @@
           },
           {
             "name": "Tools",
-            "children": []
+            "children": [
+              {
+                "name": "Enhanced",
+                "children": []
+              }
+            ]
           }
         ]
       },

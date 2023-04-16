@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "worldd:titaniumingot"
+    },
+    "1": {
+      "item": "worldd:live_steal_saber"
+    },
+    "2": {
+      "item": "worldd:void_saber"
+    },
+    "3": {
+      "item": "worldd:enhanced_live_crystal"
+    },
+    "4": {
+      "item": "worldd:enhanced_void_saber"
+    },
+    "5": {
+      "item": "worldd:death_saber"
+    },
+    "6": {
+      "item": "worldd:enhanced_void_crystal"
+    },
+    "7": {
+      "item": "worldd:enhanced_death_crystal"
+    },
+    "8": {
+      "item": "worldd:titaniumingot"
+    }
+  },
+  "result": {
+    "item": "worldd:divine_saber",
+    "count": 1
+  }
+}

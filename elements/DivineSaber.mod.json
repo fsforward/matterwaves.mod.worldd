@@ -1,0 +1,33 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "divinesaber",
+    "customModelName": "Normal",
+    "name": "Divine Saber",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 7,
+    "efficiency": 20.0,
+    "attackSpeed": 2.1,
+    "enchantability": 1,
+    "damageVsEntity": 29.5,
+    "usageCount": 8192,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DivineSaberLivingEntityIsHitWithTool"
+    },
+    "onItemInInventoryTick": {
+      "name": "DivineSaberToolInInventoryTick"
+    }
+  }
+}
